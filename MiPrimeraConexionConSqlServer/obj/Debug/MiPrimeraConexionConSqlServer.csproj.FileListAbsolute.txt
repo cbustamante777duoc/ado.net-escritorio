@@ -8,3 +8,4 @@ C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSq
 C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.exe
 C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.pdb
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.frmListadoEspecialidad.resources

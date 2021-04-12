@@ -16,7 +16,8 @@ namespace MiPrimeraConexionConSqlServer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //de esta manera se elige cual se ejecuta primero
+            Application.Run(new frmListadoEspecialidad());
         }
     }
 }
