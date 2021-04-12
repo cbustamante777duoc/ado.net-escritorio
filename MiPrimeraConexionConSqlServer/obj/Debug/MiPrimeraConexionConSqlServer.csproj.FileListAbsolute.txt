@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\bin\Debug\MiPrimeraConexionConSqlServer.exe.config
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\bin\Debug\MiPrimeraConexionConSqlServer.exe
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\bin\Debug\MiPrimeraConexionConSqlServer.pdb
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.Form1.resources
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.Properties.Resources.resources
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.exe
+C:\Users\Admin\source\repos\MiPrimeraConexionConSqlServer\MiPrimeraConexionConSqlServer\obj\Debug\MiPrimeraConexionConSqlServer.pdb
