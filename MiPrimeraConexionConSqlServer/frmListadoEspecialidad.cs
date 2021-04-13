@@ -22,17 +22,19 @@ namespace MiPrimeraConexionConSqlServer
 
         private void frmListadoEspecialidad_Load(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
-            //paso el storeProcedure + sqlConnection
-            SqlCommand cmd = new SqlCommand("uspListarEspecialidad",cn);
-            //digo que es un stoteProcedure
-            cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            //instacia de la tabla
-            DataTable tabla = new DataTable();
-            //llenado de la tabla
-            sda.Fill(tabla);
-            dgvEspecialidad.DataSource = tabla;
+            SQL.ListarProcedureSQL("uspListarEspecialidad", dgvEspecialidad);
+
+            //SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
+            ////paso el storeProcedure + sqlConnection
+            //SqlCommand cmd = new SqlCommand("uspListarEspecialidad",cn);
+            ////digo que es un stoteProcedure
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            ////instacia de la tabla
+            //DataTable tabla = new DataTable();
+            ////llenado de la tabla
+            //sda.Fill(tabla);
+            //dgvEspecialidad.DataSource = tabla;
 
 
         }

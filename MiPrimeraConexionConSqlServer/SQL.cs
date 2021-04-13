@@ -27,5 +27,22 @@ namespace MiPrimeraConexionConSqlServer
             //llenado gridView
             grilla.DataSource = tabla;
         }
+
+        public static void ListarProcedureSQL(string nombreProcedimiento, DataGridView grilla) 
+        {
+            
+            //paso el storeProcedure + sqlConnection
+            SqlCommand cmd = new SqlCommand(nombreProcedimiento, cn);
+            //digo que es un stoteProcedure
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            //instacia de la tabla
+            DataTable tabla = new DataTable();
+            //llenado de la tabla
+            sda.Fill(tabla);
+            grilla.DataSource = tabla;
+
+
+        }
     }
 }
