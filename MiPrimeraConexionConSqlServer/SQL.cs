@@ -66,9 +66,10 @@ namespace MiPrimeraConexionConSqlServer
             SqlDataAdapter sqlData = new SqlDataAdapter(command);
             sqlData.Fill(table);
             combo.DataSource = table;
+            //dos campos necesarios para el comboBox
             combo.DisplayMember = displayMember;
             combo.ValueMember = valueMember;
-            //combox
+            
 
         }
 

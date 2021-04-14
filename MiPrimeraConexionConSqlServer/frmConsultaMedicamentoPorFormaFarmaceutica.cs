@@ -22,6 +22,7 @@ namespace MiPrimeraConexionConSqlServer
         private void frmConsultaMedicamentoPorFormaFarmaceutica_Load(object sender, EventArgs e)
         {
             SQL.LLenarComboBox("USPLLENARCOMBOFORMAFARMACEUTICA2", cboFormaFarmaceutica);
+            SQL.ListarConsultaSQL("USPLISTARMEDICAMENTO", dgvMedicamento);
             // SQL.LLenarComboBox("USPLLENARCOMBOFORMAFARMACEUTICA2", cboFormaFarmaceutica, "NOMBRE", "IIDFORMAFARMACEUTICA");
             //SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
             //SqlCommand command = new SqlCommand("USPLLENARCOMBOFORMAFARMACEUTICA2",cn);
@@ -33,6 +34,14 @@ namespace MiPrimeraConexionConSqlServer
             //cboFormaFarmaceutica.DisplayMember = "NOMBRE";
             //cboFormaFarmaceutica.ValueMember = "IIDFORMAFARMACEUTICA";
 
+        }
+
+        private void filtrar(object sender, EventArgs e)
+        {
+            //usar evento rallito
+            //convertir el valor del value "id" en tostring
+            string idforma = cboFormaFarmaceutica.SelectedValue.ToString();
+            SQL.FiltradoProcemientoAlmacenado("USPCONSULTARMEDICAMENTOPORFORMA2", "@IIDFORMAFARMACEUTICA", idforma, dgvMedicamento);
         }
     }
 }

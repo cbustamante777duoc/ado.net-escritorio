@@ -31,6 +31,8 @@ namespace MiPrimeraConexionConSqlServer
         {
             this.label1 = new System.Windows.Forms.Label();
             this.cboFormaFarmaceutica = new System.Windows.Forms.ComboBox();
+            this.dgvMedicamento = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamento)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,19 +49,30 @@ namespace MiPrimeraConexionConSqlServer
             this.cboFormaFarmaceutica.FormattingEnabled = true;
             this.cboFormaFarmaceutica.Location = new System.Drawing.Point(191, 32);
             this.cboFormaFarmaceutica.Name = "cboFormaFarmaceutica";
-            this.cboFormaFarmaceutica.Size = new System.Drawing.Size(270, 21);
+            this.cboFormaFarmaceutica.Size = new System.Drawing.Size(375, 21);
             this.cboFormaFarmaceutica.TabIndex = 1;
+            this.cboFormaFarmaceutica.SelectionChangeCommitted += new System.EventHandler(this.filtrar);
+            // 
+            // dgvMedicamento
+            // 
+            this.dgvMedicamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMedicamento.Location = new System.Drawing.Point(54, 124);
+            this.dgvMedicamento.Name = "dgvMedicamento";
+            this.dgvMedicamento.Size = new System.Drawing.Size(620, 261);
+            this.dgvMedicamento.TabIndex = 2;
             // 
             // frmConsultaMedicamentoPorFormaFarmaceutica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvMedicamento);
             this.Controls.Add(this.cboFormaFarmaceutica);
             this.Controls.Add(this.label1);
             this.Name = "frmConsultaMedicamentoPorFormaFarmaceutica";
             this.Text = "frmConsultaMedicamentoPorFormaFarmaceutica";
             this.Load += new System.EventHandler(this.frmConsultaMedicamentoPorFormaFarmaceutica_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,5 +82,6 @@ namespace MiPrimeraConexionConSqlServer
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboFormaFarmaceutica;
+        private System.Windows.Forms.DataGridView dgvMedicamento;
     }
 }
