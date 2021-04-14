@@ -41,6 +41,7 @@ namespace MiPrimeraConexionConSqlServer
 
         private void filtrar(object sender, EventArgs e)
         {
+            //esto es un filtrado sensitivo
             string nombre = txtNombre.Text;
             SQL.FiltradoProcemientoAlmacenado("upsLitarPorNombreEspecialidad", "@NOMBRE", nombre, dgvEspecialidad);
         }

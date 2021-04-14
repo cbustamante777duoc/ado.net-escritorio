@@ -56,6 +56,22 @@ namespace MiPrimeraConexionConSqlServer
             grilla.DataSource = table;
         }
 
+        public static void LLenarComboBox(string nombreProcedure,ComboBox combo, string displayMember="nombre",
+            string valueMember="Id") 
+        {
+
+            SqlCommand command = new SqlCommand(nombreProcedure, cn);
+            command.CommandType = CommandType.StoredProcedure;
+            DataTable table = new DataTable();
+            SqlDataAdapter sqlData = new SqlDataAdapter(command);
+            sqlData.Fill(table);
+            combo.DataSource = table;
+            combo.DisplayMember = displayMember;
+            combo.ValueMember = valueMember;
+
+
+        }
+
     }
 }
 
