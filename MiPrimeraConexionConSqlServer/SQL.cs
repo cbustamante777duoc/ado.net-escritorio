@@ -68,7 +68,7 @@ namespace MiPrimeraConexionConSqlServer
             combo.DataSource = table;
             combo.DisplayMember = displayMember;
             combo.ValueMember = valueMember;
-
+            //combox
 
         }
 
