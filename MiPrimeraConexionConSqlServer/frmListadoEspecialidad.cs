@@ -38,5 +38,11 @@ namespace MiPrimeraConexionConSqlServer
 
 
         }
+
+        private void filtrar(object sender, EventArgs e)
+        {
+            string nombre = txtNombre.Text;
+            SQL.FiltradoProcemientoAlmacenado("upsLitarPorNombreEspecialidad", "@NOMBRE", nombre, dgvEspecialidad);
+        }
     }
 }

@@ -47,14 +47,15 @@ namespace MiPrimeraConexionConSqlServer
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string idClinica = txtIdClinica.Text;
-            SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
-            SqlCommand cmd = new SqlCommand("BuscarClinicaPorID", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@idClinica", idClinica);
-            DataTable table = new DataTable();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-            dataAdapter.Fill(table);
-            dgvClinica.DataSource = table;
+            SQL.FiltradoProcemientoAlmacenado("BuscarClinicaPorID", "@idClinica", idClinica, dgvClinica);
+            //SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
+            //SqlCommand cmd = new SqlCommand("BuscarClinicaPorID", cn);
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.Parameters.AddWithValue("@idClinica", idClinica);
+            //DataTable table = new DataTable();
+            //SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+            //dataAdapter.Fill(table);
+            //dgvClinica.DataSource = table;
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

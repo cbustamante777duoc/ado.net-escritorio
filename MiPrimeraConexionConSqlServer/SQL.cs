@@ -41,8 +41,21 @@ namespace MiPrimeraConexionConSqlServer
             //llenado de la tabla
             sda.Fill(tabla);
             grilla.DataSource = tabla;
-
-
         }
+
+        public static void FiltradoProcemientoAlmacenado(string nombreProcedure, string nombreParametro,
+            string valorParametro,DataGridView grilla)
+        {
+            
+            SqlCommand cmd = new SqlCommand(nombreProcedure, cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue(nombreParametro, valorParametro);
+            DataTable table = new DataTable();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+            dataAdapter.Fill(table);
+            grilla.DataSource = table;
+        }
+
     }
 }
+
