@@ -65,6 +65,12 @@
     <Compile Include="frmConsultarMedicoPorEspecialidad.Designer.cs">
       <DependentUpon>frmConsultarMedicoPorEspecialidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListadoDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoDoctor.Designer.cs">
+      <DependentUpon>frmListadoDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListadoEspecialidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultarMedicoPorEspecialidad.resx">
       <DependentUpon>frmConsultarMedicoPorEspecialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoDoctor.resx">
+      <DependentUpon>frmListadoDoctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListadoEspecialidad.resx">
       <DependentUpon>frmListadoEspecialidad.cs</DependentUpon>

@@ -29,11 +29,13 @@ namespace MiPrimeraConexionConSqlServer
             string valor = txtValor.Text;
             if (rbNombre.Checked==true)
             {
-                SQL.FiltradoProcemientoAlmacenado("uspConsultarMedicamentoPorNombre2", "@nombre", valor, dgvMedicamento);
+                SQL.FiltradoProcemientoAlmacenado("uspConsultarMedicamentoPorNombre2", 
+                    "@nombre", valor, dgvMedicamento);
             }
             else
             {
-                SQL.FiltradoProcemientoAlmacenado("uspConsultarMedicamentoPorConcentracion2", "@concentracion", valor, dgvMedicamento);
+                SQL.FiltradoProcemientoAlmacenado("uspConsultarMedicamentoPorConcentracion2",
+                    "@concentracion", valor, dgvMedicamento);
             }
         }
     }

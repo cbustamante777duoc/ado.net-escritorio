@@ -17,7 +17,7 @@ namespace MiPrimeraConexionConSqlServer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //de esta manera se elige cual se ejecuta primero
-            Application.Run(new frmListadoMedicamento());
+            Application.Run(new frmListadoDoctor());
         }
     }
 }
